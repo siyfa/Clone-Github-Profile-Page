@@ -1,6 +1,5 @@
 // Source Data
 const sourceData = {
-  githubUrl: "https://api.github.com/graphql",
   user: JSON.parse(localStorage.getItem("user")),
   displayName: document.getElementById("fullname"),
   userName: document.getElementsByClassName("username"),

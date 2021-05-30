@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Git Profile Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="./public//css/main.css">
 </head> 
 <body>
@@ -69,10 +69,11 @@
             <h4>Enter your github username</h4>
             <span id="warning" style="color: red; display: block;"></span>
             <input id="input" type="text" placeholder="Github username" required>
-            <button onclick="getRepo()" class="indexButton">Search</button>
+            <button class="indexButton">Search</button>
         </div>
     </main>
 
-    <script src="./public/js/fetchData.js"></script>
+    
+    <script type="module" src="./public/js/fetchData.js"></script>
 </body>
 </html>
