@@ -1,0 +1,23 @@
+{
+  "name": "index.html",
+  "version": "1.0.0",
+  "description": "Using Graphql to fetch api and vanilla css and javascript for designing",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siyfa/Clone-Github-Profile-Page.git"
+  },
+  "keywords": [
+    "GraphQl",
+    "Github-cloning"
+  ],
+  "author": "Siyfa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siyfa/Clone-Github-Profile-Page/issues"
+  },
+  "homepage": "https://github.com/siyfa/Clone-Github-Profile-Page#readme"
+}

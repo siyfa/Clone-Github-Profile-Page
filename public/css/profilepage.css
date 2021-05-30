@@ -1,0 +1,281 @@
+/* style for profile page ::content */
+*{
+    box-sizing: border-box;
+}
+/* main part styling */
+.main{
+    position: relative;
+}
+.main .left {
+    display: flex;
+    width: 30%;
+    margin-top: -30px;
+}
+.main .nav {
+    position: sticky;
+    height: 60px;
+    top: 0;
+    width: 100%;
+    background-color: #0d1117;
+    z-index: -1;
+}
+.main .right{
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 70%;
+    z-index: -3;
+}
+/* User info and picture - Left side of the main  styling */
+.main .left .user {
+    width: 70%;
+    margin: 0 auto;
+}
+.left .user .photo{
+    width: 100%;
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.left .user .photo img {
+    border-radius: 50%;
+    display: block;
+    width: 100%;
+    border: 1px solid rgb(80, 76, 76);
+}
+ .left .user .details .name p{
+    color: rgb(80, 76, 76);
+    font-weight: 400;
+    font-size: 20px;
+}
+ .left .user .details .name button {
+     margin: 5px 0;
+    width: 100%;
+    padding: 6px 30px;
+    color: whitesmoke;
+    border-radius: 5px;
+    background-color: #21262d;
+    border: 1px solid rgb(80, 76, 76);
+    cursor: pointer;
+}
+/* Top sticky navbar styling */
+.nav .scroll .line{
+    border-bottom: 1px solid rgb(63, 65, 65);
+    opacity: 0.3;
+}
+
+.nav .scroll ul {
+    align-items: center;
+    padding: 0;
+    margin-left: 30%;
+    list-style: none;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+}
+.nav .scroll ul li svg {
+    margin-right: 4px;
+}
+.nav .scroll ul li {
+    color: rgb(161, 159, 159);
+    margin-right: 1.5rem;
+    padding-top: 30px;
+    padding-bottom: 12px;
+
+}
+ .nav .scroll ul .repositories{
+    border-bottom: 3px solid rgb(249, 130, 108);
+    border-bottom-color: rgb(249, 130, 108);
+    border-radius: 2px;
+    font-weight: 600px;
+    width: 150px;
+    text-align: center;
+    color: white;
+}
+ .nav .scroll ul .repositories span{
+    display: inline-block;
+    min-width: 20px;
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    border: none;
+    border-radius: 50%;
+    background-color: #21262d;
+    color: whitesmoke;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .nav .scroll ul {
+        margin: 0 15px;
+    }
+    .main .right .repoPart {
+        width: 92%;
+    }
+    .left .name .fullname {
+        position: absolute;
+        margin-top: -22%;
+        margin-left: 22%;
+    }
+    .left .user .photo {
+        width: 20%;
+    }    
+    .main .left {
+        margin-top: 30px;
+    }
+
+}
+@media only screen and (max-width: 400px) {
+    .left .name .fullname {
+        position: absolute;
+        margin-top: -22%;
+        margin-left: 22%;
+    }
+    .left .user .photo {
+        width: 15%;
+    }  
+}  
+@media only screen and (max-width: 768px) {
+    .main .right .repoPart{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .right {
+        margin-top: -50px;
+    }
+}
+/* Repository display - Right side of the main  styling */
+.repoPart{
+    width: 95%;
+}
+.findRepo {
+    margin: 30px auto 0px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid rgb(63, 65, 65);
+    padding: 30px 0px 10px 0px;
+    width: 100%;
+}
+.findRepo input {
+    margin-bottom: 5px;
+    width: 100%;
+    margin-right: 10px;
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #c9d1d9;
+    background-color: #0d1117;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #21262d;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: transparent;
+}
+
+.repo {
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid  rgb(139 148 158) !important;
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+    overflow: auto;
+    color: #8b949e;
+}
+.repo svg {
+    fill:  rgb(139 148 158) !important;
+}
+.repo .info > div {
+    margin-bottom:15px;
+}
+.repo .info {
+    width: 75%;
+    color: rgb(139 148 158) !important;
+    display: inline-block;
+}
+
+.repo .starBtn{
+    display: flex !important;
+    margin-left: 10px;
+}
+.repo .starBtn button {
+    display: inline-block;
+    padding: 3px 12px;
+    white-space: nowrap;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid rgb(39, 38, 38);
+    background-color: rgb(33 38 45);
+    color: rgb(201 209 217);
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 30px;
+}
+
+.repo button svg{
+    fill: white;
+    display: inline;
+}
+.repo .title {
+    width: 75%;
+}
+.repo .title h3 {
+    color: #56a6ff;
+    font-weight: 600;
+    padding-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.repo .title span {
+    width: 80%;
+    font-size: 12px;
+    color: rgb(139 148 158) !important;
+}
+.repo .icons span{
+    margin-right: 10px;
+    color: rgb(139 148 158) !important;
+    font-size: 12px;
+    display: inline-block;
+    white-space: nowrap;
+}
+.repo .repo-language-color{
+    border-radius: 50%;
+    margin-right: 14px;
+    height: 0.75rem;
+    width: 0.75rem;
+    color: transparent;
+    font-size: 12px;
+    padding: 2px;
+}
+
+/* //Flex for mobile */
+@media only screen and (max-width: 768px) {
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main .nav{
+        order: 2
+    }
+    .main .left{
+        order: 1;
+        width: 100%;
+        display: block;
+    }
+    .main .left .user {
+        width: 95%;
+    }
+    .main .right {
+        position: inherit;
+        order: 3;
+        width: 100%;
+    }
+    .repo .starBtn{
+        margin-top: -50px;
+        align-items: center;
+    }
+    .repo .title h3 {
+        width: 10px;
+    }
+}
