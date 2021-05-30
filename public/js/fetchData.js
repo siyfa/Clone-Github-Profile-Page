@@ -2,7 +2,7 @@ import { apiKey } from "./api.js";
 
 //Source data
 const source = {
-  token: ${secrets.SECRET_TOKEN},
+  token: "${secrets.SECRET_TOKEN}",
   url: "https://api.github.com/graphql",
   inputUser: document.getElementById("input"),
 };
