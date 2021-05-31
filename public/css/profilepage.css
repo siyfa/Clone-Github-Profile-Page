@@ -75,6 +75,7 @@
 }
 .nav .scroll ul li svg {
     margin-right: 4px;
+    fill: #6e7681;
 }
 .nav .scroll ul li {
     color: rgb(161, 159, 159);
@@ -276,6 +277,6 @@
         align-items: center;
     }
     .repo .title h3 {
-        width: 10px;
+        width: 40px;
     }
 }
